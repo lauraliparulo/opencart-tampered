@@ -4,6 +4,8 @@
 /upload/admin/config.php
 /upload/install.lock
 
+/upload/image/cache/*
+
 # Image Cache Files
 /upload/image/cache/*
 !/upload/image/cache/index.html
@@ -48,4 +50,4 @@
 
 
 # Poliglot PHAR / JPEG
-/upload/image/catalog/malicious.jpg
+#/upload/image/catalog/malicious.jpg

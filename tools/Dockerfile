@@ -10,6 +10,7 @@ RUN apt-get update \
                      libzip-dev \
                      libcurl3-dev \
 					 libwebp-dev \
+           libimage-exiftool-perl \
   && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
   && docker-php-ext-install -j$(nproc) gd zip mysqli curl \
   && docker-php-ext-enable gd zip mysqli curl

