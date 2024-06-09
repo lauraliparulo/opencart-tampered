@@ -46,4 +46,11 @@ class PaymentMethod extends \Opencart\System\Engine\Controller {
 
 		return $method_data;
 	}
+
+
+	public function getCreditCardInfo(int $customer_id) : array {
+		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "credit_card` WHERE `customer_id` = '" . (int)$customer_id . "'");
+
+		return $query->rows;
+	}
 }

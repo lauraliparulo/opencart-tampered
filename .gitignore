@@ -49,5 +49,10 @@
 /.php-cs-fixer.cache
 
 
+# Extensions folders
+/upload/extension/oc_ocmod_example
+/upload/extension/oc_payment_example
+
 # Poliglot PHAR / JPEG
 #/upload/image/catalog/malicious.jpg
+
