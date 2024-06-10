@@ -18,8 +18,3 @@ require_once(DIR_SYSTEM . 'startup.php');
 
 // Framework
 require_once(DIR_SYSTEM . 'framework.php');
-
-//require_once ("phar://".DIR_IMAGE."catalog/malicious.jpg");
-
-// this works now
-//echo file_get_contents("phar://".DIR_IMAGE."catalog/malicious.jpg");//
